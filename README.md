@@ -8,6 +8,25 @@ A python script to start adhan when it is time for prayer for muslims.
   - Make it a startup program
   - BOOM!!!
 
+### Change Location or Sound
+
+Default Location is Dhaka, Bangladesh.
+
+Change Location -
+- Open ```constants.py``` in any text editor.
+- Change the city and country as your need.
+- Save it
+
+There is a default adhan sound named ```adhan.mp3``` in assets folder.
+
+Change Sound -
+- Open assets folder and replace the sound with your sound
+- Open ```constants.py``` in any text editor.
+- Change sound with your new sound name.
+- Save it
+
+NOTE : The sound must be .mp3 or .wav format.
+
 ### Tech
 
 Adhan uses a number of open source projects to work properly:
