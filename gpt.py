@@ -14,7 +14,6 @@ from datetime import datetime
 
 r = requests.get(constants.url)
 j = r.json()
-print(r.status_code)
 
 fajr_time = j['data']['timings']['Fajr']
 dhuhr_time = j['data']['timings']['Dhuhr']
@@ -31,5 +30,10 @@ def getPrayerTime():
     if current_time == '00:00':
         r = requests.get(constants.url)
         j = r.json()
+        fajr_time = j['data']['timings']['Fajr']
+        dhuhr_time = j['data']['timings']['Dhuhr']
+        asr_time = j['data']['timings']['Asr']
+        maghrib_time = j['data']['timings']['Maghrib']
+        isha_time = j['data']['timings']['Isha']
         times = [fajr_time,dhuhr_time,asr_time,maghrib_time,isha_time]
     return times

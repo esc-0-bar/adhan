@@ -14,18 +14,15 @@ import constants
 import gpt
 import time
 from datetime import datetime
-from pydub import AudioSegment
-from pydub.playback import play
+from playsound import playsound
 
 
 while True:
     now = datetime.now()
     current_time = now.strftime("%H:%M")
-    print('Current time ',current_time)
 
     for t in gpt.getPrayerTime():
         time.sleep(.5)
-        print(t)
         if current_time == t:
-            play(AudioSegment.from_mp3(constants.song))
+            playsound(constants.sound)
         

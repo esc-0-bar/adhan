@@ -8,7 +8,7 @@
 
 """Adhan Script"""
 
-song = 'assets/azan.mp3'
+sound = 'assets/azan.mp3'
 city = 'Dhaka'
 Country = 'Bangladesh'
 
