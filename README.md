@@ -46,7 +46,7 @@ Adhan requires [Python](https://python.org/) v3 to run.
 Install the dependencies to run the script.
 
 ```sh
-$ clone https://github.com/i-am-ahad/adhan
+$ git clone https://github.com/i-am-ahad/adhan
 $ cd adhan
 $ cp * ~/my-startups-scripts/adhan
 $ cd ~/my-startups-scripts/adhan
